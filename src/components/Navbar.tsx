@@ -30,7 +30,7 @@ const Navbar = () => {
             href="/"
             className="z-40 flex items-center justify-center font-semibold"
           >
-            <img src="/favicon.ico" className="mr-1.5 h-5 w-5" alt="Logo" />
+            <img src="/favicon.png" className="mr-1.5 h-5 w-5" alt="Logo" />
             <span>Molly</span>
           </Link>
 

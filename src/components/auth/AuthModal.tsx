@@ -1,3 +1,5 @@
+"use client";
+
 import { Dialog, DialogContent } from "~/components/ui/dialog";
 import AuthForm from "~/components/auth/AuthForm";
 import useAuthModal from "store/useAuthModal";

@@ -23,7 +23,7 @@ const inter = Inter({
 
 export const metadata = {
   description: "",
-  icons: [{ rel: "icon", url: "/favicon.ico" }],
+  icons: [{ rel: "icon", url: "/favicon.png" }],
 };
 
 export default function RootLayout({
