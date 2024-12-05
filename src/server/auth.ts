@@ -65,8 +65,6 @@ async function sendVerificationRequest(params: {
  * Insert invisible space into domains from being turned into a hyperlink by email
  * clients like Outlook and Apple mail, as this is confusing because it seems
  * like they are supposed to click on it to sign in.
- *
- * @note We don't add the email address to avoid needing to escape it, if you do, remember to sanitize it!
  */
 function html(params: { url: string; host: string; theme: Theme }) {
   const { url, host, theme } = params;
@@ -104,8 +102,8 @@ function html(params: { url: string; host: string; theme: Theme }) {
                 <tr>
                   <td align="center" style="padding: 16px 0 32px;">
                     <a href="${url}" 
-                       target="_blank"
-                       style="display: inline-block; padding: 14px 32px; font-size: 16px; font-weight: 500; color: ${color.buttonText}; background: ${color.buttonBackground}; border-radius: 8px; text-decoration: none; transition: all 0.2s; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);">
+                      target="_blank"
+                      style="display: inline-block; padding: 14px 32px; font-size: 16px; font-weight: 500; color: ${color.buttonText}; background: ${color.buttonBackground}; border-radius: 8px; text-decoration: none; transition: all 0.2s; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);">
                       Sign in to your account
                     </a>
                   </td>
